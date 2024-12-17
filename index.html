@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux Noël</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Section de Noël -->
+    <div class="background">
+        <div class="snow"></div>
+        <div class="container">
+            <div id="form-section" class="content">
+                <h1>🎄 Ir Victor Amos vous souhaite un Joyeux Noël ! 🎁</h1>
+                <p>Voulez-vous aussi souhaiter quelqu'un un <strong>JOYEUX NOËL ?</strong></p>
+                <form id="user-form">
+                    <label for="name">Votre nom :</label>
+                    <input type="text" id="name" placeholder="Entrez votre nom" required>
+                    <p>Voulez-vous ajouter un message supplementaire ?</p>
+                    <label for="custom-message">Message supplémentaire (optionnel) :</label>
+                    <textarea id="custom-message" placeholder="Ajoutez un message supplémentaire
+ici..."></textarea>
+                    <button type="button" id="generate-button">Valider</button>
+                </form>
+            </div>
+            <div id="result-section" class="content hidden">
+                <h1 id="main-message"></h1>
+                <p id="additional-message"></p>
+                <button id="share-button">Partager sur WhatsApp</button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy, 2024 Ir Victor Amos, tout droit réservé.</p>
+        <p><a href="https://wa.me/123456789" target="_blank">WhatsApp : +123 456
+                789</a></p>
+    </footer>
+</body>
+
+</html>
